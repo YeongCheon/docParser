@@ -87,33 +87,3 @@ func SaveTextFile(fileName, fileContent string) {
 		log.Fatal(err)
 	}
 }
-
-func main() {
-	/*
-		if len(os.Args) < 3 {
-			fmt.Println("\n Usage: GoFinder <filePath> <keyword1> [<keyword2>...n]" +
-				"\n e.g. GoFinder /tmp/sample.docx C++ Java\n")
-			return
-		}
-
-		keywords := make(map[string]bool)
-		for _, keyword := range os.Args[2:] {
-			keywords[keyword] = false
-		}
-
-		filePath := os.Args[1]
-
-		documentContent := GetDocumentContent(filePath)
-		fmt.Println(documentContent)
-		if len(documentContent) == 0 {
-			fmt.Println("Empty document")
-			return
-		}
-
-		SearchKeywords(documentContent, keywords)
-
-		for keyword, exists := range keywords {
-			fmt.Println(keyword, exists)
-		}
-	*/
-}
